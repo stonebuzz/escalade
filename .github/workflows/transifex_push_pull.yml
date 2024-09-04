@@ -1,0 +1,18 @@
+name: "Transifex Push / Pull"
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  transifex_push_pull:
+    permissions:
+      contents: "write"
+      pull-requests: "write"
+    name: "Transifex Push / Pull"
+    uses: "stonebuzz/plugin-translation-workflows/.github/workflows/transifex_push_pull.yml@v1"
+    with:
+      branch: "main"
+    secrets:
+      tx_token: "${{ secrets.TRANSLATE_TOKEN }}"
