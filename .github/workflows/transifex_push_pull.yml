@@ -15,4 +15,4 @@ jobs:
     with:
       branch: "main"
     secrets:
-      tx_token: "${{ secrets.TRANSLATE_TOKEN }}"
+      tx_token: "${{ secrets.TRANSIFEX_TOKEN }}"
