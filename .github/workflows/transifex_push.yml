@@ -8,7 +8,7 @@ on:
 jobs:
   transifex_push:
     name: "Transifex Push"
-    uses: "glpi-project/plugin-translation-workflows/.github/workflows/transifex_push.yml@v1"
+    uses: "stonebuzz/plugin-translation-workflows/.github/workflows/transifex_push.yml@v1"
     with:
       branch: "main"
     secrets:
